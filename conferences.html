@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roster — Conferences by the numbers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="none" class="ic-accent" stroke-width="2"></rect><path d="M8 9h12M8 14h12M8 19h7" class="ic-accent" stroke-width="2" stroke-linecap="round"></path></svg>
+      <span class="brand-word">ROSTER</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="#table" aria-current="page">Conferences</a>
+      <a href="fit.html">Find your fit</a>
+      <a href="index.html#join" class="btn btn-sm">Join the waitlist</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="container page-hero">
+  <span class="eyebrow">Conferences by the numbers</span>
+  <h1 class="display display-l">Five conferences. Thousands of athletes. One information gap.</h1>
+  <p class="lede">The Big Ten, SEC, ACC, Big 12 and Pac-12 hold most of the roster spots, playoff bids and money in college football and basketball. They're also where the decisions on recruiting, the transfer portal and NIL matter most.</p>
+  <div class="toggle" role="group" aria-label="Choose a sport" data-sport-toggle>
+    <button type="button" data-sport="football" aria-pressed="true">Football</button>
+    <button type="button" data-sport="basketball" aria-pressed="false">Basketball</button>
+  </div>
+</section>
+
+<section class="container" style="padding-bottom: 72px">
+  <div class="stat-grid" id="stats"></div>
+</section>
+
+<section id="table" class="container stack" style="padding-bottom: 96px; gap: 24px">
+  <div class="table-head">
+    <h2 class="display" id="table-title"></h2>
+    <span class="small" id="table-sub"></span>
+  </div>
+  <div class="table-wrap">
+    <table class="conf-table">
+      <thead>
+        <tr>
+          <th scope="col">Conference</th>
+          <th scope="col">Schools</th>
+          <th scope="col" style="width: 34%">Max roster spots</th>
+          <th scope="col" id="post-label"></th>
+          <th scope="col">Worth knowing</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <p class="small" id="footnote" style="max-width: 900px"></p>
+</section>
+
+<section class="light">
+  <div class="container" style="padding-top: 104px; padding-bottom: 104px; display: flex; flex-wrap: wrap; gap: 56px">
+    <div class="stack" style="flex: 1 1 420px; min-width: 0; gap: 16px">
+      <span class="eyebrow">Year one of revenue sharing</span>
+      <h2 class="display" style="font-size: 56px">The money changed. So did the questions.</h2>
+      <p class="body-l">Schools can now pay athletes directly. Athletes now have to compare offers, contracts and staff promises, and the people who know how those play out are other athletes.</p>
+    </div>
+    <div class="stat-grid" style="flex: 1 1 520px; min-width: 0; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))">
+      <div class="card stat"><span class="stat-value">$20.5M</span><span class="stat-label">Per-school cap on direct payments to athletes in year one</span></div>
+      <div class="card stat"><span class="stat-value">68</span><span class="stat-label">Schools that hit or came within 5% of the cap</span></div>
+      <div class="card stat"><span class="stat-value">$1.77B</span><span class="stat-label">Paid out by 307 schools across 33 conferences</span></div>
+      <div class="card stat"><span class="stat-value">34,915</span><span class="stat-label">Athletes who received a share</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="container cta-band">
+  <div class="cta-panel">
+    <div class="stack">
+      <h2 class="display">Numbers tell you where. Athletes tell you what it's like.</h2>
+      <p>Join the waitlist and get verified as your conference's community opens.</p>
+    </div>
+    <a href="index.html#join" class="btn">Join the waitlist</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container sources">
+    <strong>Sources</strong>
+    <span>Membership: AP realignment cheat sheet (May 2026) and Texas State's "The New Pac-12" (2026). CFP field and result: College Football Playoff 2025-26 recap. NCAA tournament bids: Sports Illustrated (men's) and NBC Sports (women's), March 2026. Champions: NCAA championship game records, April 2026. Roster limits and $20.5M cap: House v. NCAA settlement. Payout figures: College Sports Commission data as reported October 2026.</span>
+    <span>Max roster spots = schools × roster limit (football 105; men's and women's basketball 15 each). They're ceilings, not actual headcounts.</span>
+    <span class="copy">© 2026 Roster</span>
+  </div>
+</footer>
+
+<script src="roster.js"></script>
+<script src="conferences.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roster — Find your fit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="none" class="ic-accent" stroke-width="2"></rect><path d="M8 9h12M8 14h12M8 19h7" class="ic-accent" stroke-width="2" stroke-linecap="round"></path></svg>
+      <span class="brand-word">ROSTER</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="#money" aria-current="page">Find your fit</a>
+      <a href="index.html#join" class="btn btn-sm">Join the waitlist</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="container page-hero" style="padding-bottom: 56px">
+  <span class="eyebrow">Find your fit</span>
+  <h1 class="display display-l" style="max-width: 960px">Follow the money. Watch who leaves.</h1>
+  <p class="lede" style="max-width: 740px">Before you commit, two public signals say a lot about a program: how much it spends on its roster, and how many players walk out the door. Neither tells you if a school is right for you. Both tell you what to ask.</p>
+  <div class="toggle" role="group" aria-label="Choose a sport" data-sport-toggle>
+    <button type="button" data-sport="football" aria-pressed="true">Football</button>
+    <button type="button" data-sport="basketball" aria-pressed="false">Basketball</button>
+  </div>
+</section>
+
+<section id="money" class="container" style="padding-bottom: 72px; display: flex; flex-wrap: wrap; gap: 24px">
+  <div class="card ranked">
+    <div class="stack" style="gap: 8px">
+      <span class="eyebrow eyebrow-sm">Signal 1 · The money</span>
+      <h2 class="display" id="money-title"></h2>
+      <span class="small" id="money-sub"></span>
+    </div>
+    <ol id="money-list"></ol>
+    <p class="small" id="money-note"></p>
+  </div>
+  <div class="card ranked">
+    <div class="stack" style="gap: 8px">
+      <span class="eyebrow eyebrow-sm" style="color: var(--orange)">Signal 2 · The movement</span>
+      <h2 class="display" id="move-title"></h2>
+      <span class="small" id="move-sub"></span>
+    </div>
+    <ol id="move-list"></ol>
+    <p class="small" id="move-note"></p>
+  </div>
+</section>
+
+<section class="container" style="padding-bottom: 96px">
+  <div class="takeaway">
+    <div class="stack">
+      <span class="eyebrow eyebrow-sm">What the two lists show together</span>
+      <h2 class="display" id="take-title"></h2>
+    </div>
+    <p id="take-body"></p>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container stack" style="padding-top: 104px; padding-bottom: 104px; gap: 48px">
+    <div class="section-head" style="max-width: 780px">
+      <span class="eyebrow">Your fit checklist</span>
+      <h2 class="display" style="font-size: 56px">Turn the numbers into questions.</h2>
+      <p class="body-l">The best fit isn't the biggest budget or the lowest turnover. It's the program where your role, your money and your development match what you were promised. Ask these before you sign.</p>
+    </div>
+    <ol class="checklist">
+      <li class="card"><span class="num">01</span><h3>Where does the budget go?</h3><p>A big total can sit with a few stars. Ask what someone in your position and class actually received.</p></li>
+      <li class="card"><span class="num">02</span><h3>Why did players leave?</h3><p>A coaching change, playing time and broken promises all show up as departures. Find out which one it was.</p></li>
+      <li class="card"><span class="num">03</span><h3>Will the staff still be there?</h3><p>You're committing to people as much as a school. Ask how long your position coach plans to stay.</p></li>
+      <li class="card"><span class="num">04</span><h3>Is it in writing?</h3><p>Verbal NIL numbers can change. Ask current players whether what they were told matched what they got.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="container cta-band">
+  <div class="cta-panel">
+    <div class="stack">
+      <h2 class="display">The data shows what happened. Athletes know why.</h2>
+      <p>On Roster, verified athletes answer those four questions anonymously, for the programs you're actually considering.</p>
+    </div>
+    <a href="index.html#join" class="btn">Join the waitlist</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container sources">
+    <strong>Sources</strong>
+    <span>Football NIL budgets: The Athletic's estimated ranges, via The Big Lead (Sept. 2026). Football portal departures: On3, January 2026 window (Jan. 31, 2026). Men's basketball roster spending: CBS Sports 2026-27 tiers (Oct. 21, 2026). Basketball NIL averages: Opendorse College Basketball Report 2026, via On3. Men's portal entrants by conference: NCAA figures via USA TODAY Sports (Apr. 23, 2026). Women's portal moves: CBS Sports (Apr. 27, 2026).</span>
+    <span>All spending figures are outside estimates. Schools don't publish them.</span>
+    <span class="copy">© 2026 Roster</span>
+  </div>
+</footer>
+
+<script src="roster.js"></script>
+<script src="fit.js"></script>
+</body>
+</html>

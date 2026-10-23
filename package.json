@@ -1,0 +1,9 @@
+{
+  "name": "roster-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Roster: a verified, anonymous community for college athletes.",
+  "scripts": {
+    "start": "npx --yes serve@14.2.4 -l 3000 ."
+  }
+}
